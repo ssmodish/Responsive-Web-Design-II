@@ -353,72 +353,104 @@ nav a:hover {
 
 @media (max-width:800px) {
   .container {
-    width: 100%;
+    max-width: 800px;
+  }
+
+  .fixed-nav * {
+    margin: 0;
+    padding: 0;
   }
 
   .fixed-nav {
     width: 100%;
-    margin: 30px 0 0;
+    margin: 20px 0 10px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .fixed-nav .nav-bar {
+    width: 100%;
     order: 1;
-    padding-right: 5px;
   }
 
-  .fixed-nav .nav-bar a {
-    padding: 0 30px;
+  .fixed-nav .nav-bar ul {
+    padding-left: 3%;
+    display: flex;
+    justify-content: space-around;
   }
 
-  .fixed-nav .nav-bar .logo-link {
+  .fixed-nav .nav-bar li {
+    width: calc(100% / 6 - 1);    
+  }
+
+  .fixed-nav .nav-bar li a {
+    font-size: 1.4rem;
+    letter-spacing: .05rem;
+    padding-top: 30px;
+  }
+
+  .fixed-nav img {
     order: 0;
+    margin: 10px 0 10px;
   }
 
   header {
-    margin: 0;
-    padding: 40px 0;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  header .header-content {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    border: none;
   }
 
   header .header-img {
     display: none;
   }
 
-  header .header-content h1 {
-    margin: 0;
-    padding: 25px 0;
-  }
-
-  header .header-content .button {
+  header .header-content {
+    width: 100%;
     padding: 0;
-    margin: 0 auto;
-    height: 30px;
+    margin: 33px 0 0;
   }
 
-  hr {
-    width: 97%;
-    margin: 20px auto;
-  }
 
   .two-col {
+    border-top: 2px solid black;
+    font-size: 1.3rem;
+    letter-spacing: .04rem;
+    margin: 0 3%;
     justify-content: space-evenly;
   }
 
   .two-col div {
-    width: 48%;
+    width: 47%;
+  }
+
+  .wide-img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .three-col {
+    width: 98%;
+    font-size: 1.4rem;
+    letter-spacing: .05rem;
+    margin: 0 3%;
+    justify-content: flex-start;
+    border: none;
+  }
+
+  .three-col div {
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  .contact {
+    border-top: 2px solid black;
+    width: 95%;
+    margin: 0;
+    padding: 40px 0 30px 1%;
+    margin-left: 3%;
+    font-size: 1.4rem;
+  }
+
+  footer {
+    letter-spacing: .05rem;
   }
 }
 
