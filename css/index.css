@@ -493,9 +493,49 @@ nav a:hover {
     margin: 0;
   }
 
-  .header-content {
+  header {
     padding: 0;
-    padding: 50px 0;
-    border: 2px solid red;
   }
+
+  header .header-content .button {
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  .two-col {
+    margin-top: 70px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 98%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .two-col div h2 {
+    font-size: 1.4rem;
+  }
+
+  .three-col {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .three-col h2 {
+    font-size: 1.5rem;
+  }
+
+  .three-col div {
+    width: 98%;
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+
+  .contact {
+    margin-top: 10px;
+    padding-top: 32px;
+  }
+
 }
